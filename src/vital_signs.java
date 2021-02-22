@@ -63,9 +63,8 @@ public class vital_signs {
             
             switch (value) {
                 case 1:
-                    vital_signs vs=new vital_signs();
-                    vs.vital_signs();
-                    p1.history(vs);
+                    vital_signs vs;
+                    vs=p1.new_vital_Sign();                    
                 break;
                 case 2:
                     System.out.println(" ");

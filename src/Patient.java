@@ -5,6 +5,13 @@ import java.util.Iterator;
 public class Patient {
     ArrayList<vital_signs> pt=new ArrayList<vital_signs>();
     private Iterator<vital_signs> vs;
+    public vital_signs new_vital_Sign()
+    {
+        vital_signs vs=new vital_signs();
+        vs.vital_signs();
+        history(vs);
+        return vs;
+    }
     boolean isPatientNormal(vital_signs vs){
         float age=vs.age;
         int respiratoty_rate=vs.respiratoty_rate;
