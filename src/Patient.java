@@ -1,4 +1,5 @@
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 public class Patient {
@@ -114,6 +115,7 @@ public class Patient {
     }
     void details(String name){
         String abc=name;
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         int a=pt.size();
         vital_signs b;
         int count=1;
@@ -140,7 +142,8 @@ public class Patient {
             System.out.println("heart rate : "+b.heart_rate);
             System.out.println("blood pressure : "+b.blood_pressure);
             System.out.println("weight in kilograms : "+b.Kg_weight);
-            System.out.println("weight in pounds : "+b.Lb_weight);   
+            System.out.println("weight in pounds : "+b.Lb_weight);
+            System.out.println("weight in pounds : "+formatter.format(b.date));
             System.out.println(" "); 
             }
             

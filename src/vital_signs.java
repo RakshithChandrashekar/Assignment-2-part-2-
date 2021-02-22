@@ -1,4 +1,6 @@
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class vital_signs {
@@ -9,6 +11,8 @@ public class vital_signs {
     int blood_pressure;
     float Kg_weight;
     float Lb_weight;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
+    Date date = new Date();  
     void vital_signs()
     {
         Scanner x = new Scanner(System.in);
@@ -40,8 +44,9 @@ public class vital_signs {
         System.out.println("enter the weight in kelogram");
         Kg_weight= x.nextInt();
         System.out.println("enter the weight pounds");
-        Lb_weight= x.nextInt();  
-        System.out.println(" ");
+        Lb_weight= x.nextInt();
+        System.out.println("time and date : "+formatter.format(date)); 
+        System.out.println(" "); 
     }
     public static void main(String[] args)
     {
