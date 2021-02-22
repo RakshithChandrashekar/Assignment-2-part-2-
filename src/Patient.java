@@ -150,7 +150,7 @@ public class Patient {
             System.out.println("blood pressure : "+b.blood_pressure);
             System.out.println("weight in kilograms : "+b.Kg_weight);
             System.out.println("weight in pounds : "+b.Lb_weight);
-            System.out.println("weight in pounds : "+formatter.format(b.date));
+            System.out.println("time and date : "+formatter.format(b.date));
             System.out.println(" "); 
             }
             
