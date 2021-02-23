@@ -2,7 +2,6 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-
 public class vital_signs {
     String name;
     float age;
@@ -82,6 +81,56 @@ public class vital_signs {
                     boolean result=p.isPatientNormal(vm);                    
                     System.out.println("is patient normal : "+result);
                     System.out.println(" ");
+                    System.out.println("do you want to check individual vital sign? ");
+                    int val=100;                    
+                    while(val!=0)
+                    {
+                        System.out.println(" ");
+                        System.out.println("please enter the number presiding vital sign");
+                        System.out.println("1.respiratory_rate");
+                        System.out.println("2.heart_rate");
+                        System.out.println("3.blood_pressure");
+                        System.out.println("4.weight_in_kg");
+                        System.out.println("5.weight_in_pounds");
+                        System.out.println("0.main_menu");
+                        System.out.println(" ");
+                       
+                        char dd=x.next().charAt(0);
+                        if(dd=='0')
+                        {
+                            break;
+                        }
+                        switch(dd)
+                        {
+                            case '1':
+                                boolean r=p.string_vital(vm.age,vm.respiratoty_rate,'1');
+                                System.out.println("respiratory rate : "+r);
+                                break;
+                            case '2':
+                                boolean r1=p.string_vital(vm.age,vm.heart_rate,'2');
+                                System.out.println("heart rate : "+r1);
+                                break;
+                            case '3':
+                                boolean r2=p.string_vital(vm.age,vm.blood_pressure,'3');
+                                System.out.println("blood pressure : "+r2);
+                                break;
+                            case '4':
+                                boolean r3=p.string_vital(vm.age,vm.Kg_weight,'4');
+                                System.out.println("weight in kg : "+r3);
+                                break;
+                            case '5':
+                                boolean r4=p.string_vital(vm.age,vm.Lb_weight,'5');
+                                System.out.println("weight in pound : "+r4);
+                                break;
+                         
+                                
+                                
+                        }
+                        
+                        
+                        
+                    }
+                    
                     }
                 break;
                 case 3:

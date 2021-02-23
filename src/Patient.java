@@ -161,4 +161,396 @@ public class Patient {
         }
         
     }
+    public boolean string_vital(float age,float c,char d)
+    {
+        boolean r = false;
+        if (age==0)
+        {
+            if(d=='1')
+            {
+                if(c>=30&c<=50)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=120&c<=160)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=50&c<=70)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>=2&c<=3)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>=4.5&c<=7)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+            
+            
+        }
+        else if(age>0 & age<1)
+        {
+            if(d=='1')
+            {
+                if(c>=20&c<=30)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=80&c<=140)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=70&c<=100)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>=4&c<=10)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>=9&c<=22)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+        }
+        else if(age>=1 & age<3)
+        {
+            if(d=='1')
+            {
+                if(c>=20&c<=30)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=80&c<=130)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=80&c<=110)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>=10&c<=14)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>=9&c<=22)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+        }
+        else if(age>=3 & age<6)
+        {
+            if(d=='1')
+            {
+                if(c>=20&c<=30)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=80&c<=120)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=80&c<=110)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>=14&c<=18)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>=31&c<=40)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+        }        
+        else if(age>=6 & age<13)
+        {
+            if(d=='1')
+            {
+                if(c>=20&c<=30)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=70&c<=110)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=80&c<=120)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>=20&c<=42)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>=41&c<=92)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+        }
+        else
+        {
+            if(d=='1')
+            {
+                if(c>=12&c<=20)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='2')
+            {
+                if(c>=55&c<=105)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='3')
+            {
+                if(c>=110&c<=120)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='4')
+            {
+                if(c>50)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            if(d=='5')
+            {
+                if(c>110)
+                {
+                    r= true;
+                }
+                else
+                {
+                    r= false;
+                }
+                
+            }
+            
+        }
+        return r;
+        
+    }
 }
