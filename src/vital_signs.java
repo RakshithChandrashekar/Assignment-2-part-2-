@@ -42,9 +42,9 @@ public class vital_signs {
         System.out.println("enter blood pressure : ");
         blood_pressure =x.nextInt();
         System.out.println("enter the weight in kelogram");
-        Kg_weight= x.nextInt();
+        Kg_weight= x.nextFloat();
         System.out.println("enter the weight pounds");
-        Lb_weight= x.nextInt();
+        Lb_weight= x.nextFloat();
         System.out.println("time and date : "+formatter.format(date)); 
         System.out.println(" "); 
     }
