@@ -93,7 +93,6 @@ public class vital_signs {
                         System.out.println("4.weight_in_kg");
                         System.out.println("5.weight_in_pounds");
                         System.out.println("0.main_menu");
-                        System.out.println(" ");
                        
                         char dd=x.next().charAt(0);
                         if(dd=='0')
@@ -104,22 +103,27 @@ public class vital_signs {
                         {
                             case '1':
                                 boolean r=p.string_vital(vm.age,vm.respiratoty_rate,'1');
+                                System.out.println(" ");
                                 System.out.println("respiratory rate : "+r);
                                 break;
                             case '2':
                                 boolean r1=p.string_vital(vm.age,vm.heart_rate,'2');
+                                System.out.println(" ");
                                 System.out.println("heart rate : "+r1);
                                 break;
                             case '3':
                                 boolean r2=p.string_vital(vm.age,vm.blood_pressure,'3');
+                                System.out.println(" ");
                                 System.out.println("blood pressure : "+r2);
                                 break;
                             case '4':
                                 boolean r3=p.string_vital(vm.age,vm.Kg_weight,'4');
+                                System.out.println(" ");
                                 System.out.println("weight in kg : "+r3);
                                 break;
                             case '5':
                                 boolean r4=p.string_vital(vm.age,vm.Lb_weight,'5');
+                                System.out.println(" ");
                                 System.out.println("weight in pound : "+r4);
                                 break;
                          
